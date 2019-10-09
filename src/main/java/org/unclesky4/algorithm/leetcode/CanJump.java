@@ -33,7 +33,7 @@ public class CanJump {
 
 
 	/*
-	使用贪心的思路看下这个问题，我们记录一个的坐标代表当前可达的最后节点，这个坐标初始等于nums.length-1，
+	使用贪心的思路看下这个问题，我们记录一个坐标代表当前可达的最后节点，这个坐标初始等于nums.length-1，
 	然后我们每判断完是否可达，都向前移动这个坐标，直到遍历结束。
 	
 	如果这个坐标等于0，那么认为可达，否则不可达。
@@ -55,7 +55,7 @@ public class CanJump {
 
 	public static void main(String[] args) {
 		int[] array = new int[] {2,3,1,1,4};
-		System.out.println(canJump(array));
+		//System.out.println(canJump(array));
 		System.out.println(canJump_0(array));
 	}
 
